@@ -40,10 +40,14 @@ public class HomePage extends WebPage {
 		
 		PropertyModel<String> messageModel = new PropertyModel<>(this, "message");
 		PropertyModel<String> sqrtMessageModel = new PropertyModel<>(this, "quad");
+		PropertyModel<Auto> autoModel = new PropertyModel<>(, );
 		
 		 Form<?> form = new Form("form");
 	        form.add(new TextField<>("msgInput", messageModel));
 	        add(form);
+	        
+	     Form<?> form1 = new Form("form1");
+	     	form.add(new TextField<>("herstelerInput", ))
 
 	        add(new Label("msg", sqrtMessageModel));
 		// TODO Add your page's components here

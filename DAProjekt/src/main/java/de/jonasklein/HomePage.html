@@ -20,32 +20,20 @@
 		<form wicket:id="form">
 			<input type="text" wicket:id="msgInput" value="" size="50" />
 			<input type="submit" value="set message" />
+
 		</form>
 		 <span wicket:id="msg" id="msg">Message goes here</span>
 		
-		<ul>
-			<li>join us on IRC on <a
-				href="irc:%23%23wicket@irc.freenode.net">&#35;&#35;wicket@irc.freenode.net</a></li>
-			<li><a href="http://wicket-users.markmail.org/" target="_blank"
-				title="Search the mailing list archives">search</a> our mailing list
-				archives</li>
-			<li>ask a question on the <a
-				href="http://wicket.apache.org/help/email.html">users list</a></li>
-		</ul>
-		<h3>Reporting a bug</h3>
-		<p>Help us help you:</p>
-		<ol>
-			<li>reproduce the bug with the <strong>least</strong> amount of
-				code
-			</li>
-			<li>create a unit test that shows the bug</li>
-			<li>fix the bug and create a patch</li>
-			<li>attach the result of step 1, 2 or 3 to a <a
-				href="https://issues.apache.org/jira/browse/WICKET" target="_blank">JIRA
-					issue</a></li>
-			<li>profit!</li>
-		</ol>
-		<p>
+		<form wicket:id="form1">
+			<input type="text" wicket:id="herstellerInput" value="Hersteller eingeben" size="100" />
+			<input type="text" wicket:id="modellInput" value="Modell eingeben" size="100" />
+			<input type="text" wicket:id="kwInput" value="kW eingeben" size="100" />
+			<input type="text" wicket:id="kmStandInput" value="Kilometerstand eingeben" size="100" />
+			<input type="text" wicket:id="tankVolInput" value="Tankvolumen eingeben" size="100" />
+			<input type="submit" value="Speichern" />
+		</form>
+		
+				<p>
 			Please mention the correct Wicket version:
 			<wicket:container wicket:id="version">1.5-SNAPSHOT</wicket:container>
 			.
